@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #402543;
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+/* Card Design */
+
+.card {
+    width: 180px;
+    height: 260px;
+
+    position: relative;
+    text-align: center;
+
+    border: 5px solid white;
+
+    border-radius: 20px 20px 50% 50% / 20px 20px 22% 22%;
+
+    padding: 75px 12px 20px;
+
+    color: white;
+
+    transition: 0.4s ease;
+
+    box-shadow: 0 8px 0 rgba(255,255,255,0.9),
+                0 15px 15px rgba(0,0,0,0.3);
+}
+
+/* Card Colors */
+
+.card-one {
+    background: linear-gradient(150deg, #f000bd, #843cff);
+}
+
+.card-two {
+    background: linear-gradient(150deg, #ffe75c, #f000b7);
+}
+
+.card-three {
+    background: linear-gradient(150deg, #00ef83, #813cff);
+}
+
+/* Top Circular Cutout */
+
+.card::before {
+    content: "";
+    position: absolute;
+
+    width: 78px;
+    height: 78px;
+
+    background-color: #402543;
+
+    border-radius: 50%;
+
+    top: -5px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    box-shadow: 0 5px 0 white;
+}
+
+/* Icon Circle */
+
+.icon {
+    position: absolute;
+
+    width: 65px;
+    height: 65px;
+
+    background-color: #402543;
+
+    border: 3px solid white;
+    border-radius: 50%;
+
+    top: -3px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.icon i {
+    font-size: 35px;
+    color: white;
+}
+
+/* Content */
+
+.content {
+    position: relative;
+    z-index: 3;
+}
+
+.content h2 {
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.content p {
+    font-size: 9px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Hover Effect */
+
+.card:hover {
+    transform: translateY(-12px) scale(1.03);
+
+    box-shadow: 0 12px 0 white,
+                0 22px 20px rgba(0,0,0,0.4);
+}
+
+/* Responsive */
+
+@media (max-width: 650px) {
+
+    .container {
+        gap: 35px;
+    }
+
+    .card {
+        width: 220px;
+        height: 280px;
+    }
+
+    .content p {
+        font-size: 11px;
+    }
+
+}

@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eef3f7;
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Heading */
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: black;
+    text-decoration: underline wavy red;
+}
+
+/* Container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Card Design */
+
+.card {
+    width: 130px;
+    height: 170px;
+    background-color: white;
+    border: 1px solid #777;
+    padding: 14px;
+    position: relative;
+
+    transition: 0.4s ease;
+
+    box-shadow: 3px 3px 0 white,
+                4px 4px 0 #777,
+                7px 7px 0 white,
+                8px 8px 0 #777;
+}
+
+/* Small Label */
+
+.card span {
+    background-color: #d9231e;
+    color: white;
+    font-size: 5px;
+    padding: 3px 6px;
+    border-radius: 10px;
+}
+
+/* Card Text */
+
+.card h3 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 8px;
+    color: black;
+}
+
+/* Red Text */
+
+.card h3 b {
+    color: #d9231e;
+}
+
+/* Heart Icon */
+
+.card i {
+    color: #d9231e;
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    font-size: 13px;
+}
+
+/* Hover Effect */
+
+.card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 7px 7px 0 white,
+                8px 8px 0 #777,
+                11px 11px 0 white,
+                12px 12px 0 #777;
+}
+
+/* Responsive */
+
+@media (max-width: 450px) {
+
+    .container {
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .card {
+        width: 140px;
+    }
+
+}

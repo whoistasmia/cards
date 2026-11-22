@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Team</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+<section class="team-section">
+
+    <h2>Meet Our <span>Team</span></h2>
+
+    <div class="team-container">
+
+        <button class="arrow left" onclick="changeCard(-1)">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="team-cards">
+
+            <!-- Card 1 -->
+            <div class="team-card">
+
+                <div class="card-top">
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="profile">
+
+                <div class="card-content">
+                    <h4>Anita Rai</h4>
+                    <p>UI/UX Designer</p>
+
+                    <div class="stars">★★★★★</div>
+
+                    <div class="buttons">
+                        <button class="about">About Me</button>
+                        <button class="hire">Hire Me</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="team-card">
+
+                <div class="card-top">
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile">
+
+                <div class="card-content">
+                    <h4>Rohan Karki</h4>
+                    <p>Full Stack Dev</p>
+
+                    <div class="stars">★★★★☆</div>
+
+                    <div class="buttons">
+                        <button class="about">About Me</button>
+                        <button class="hire">Hire Me</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="team-card">
+
+                <div class="card-top">
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" class="profile">
+
+                <div class="card-content">
+                    <h4>Sita Magar</h4>
+                    <p>Data Scientist</p>
+
+                    <div class="stars">★★★★★</div>
+
+                    <div class="buttons">
+                        <button class="about">About Me</button>
+                        <button class="hire">Hire Me</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="arrow right" onclick="changeCard(1)">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292b33;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #f6f7e9;
+    margin: 8px 30px;
+}
+
+.card {
+    width: 650px;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Pink Box */
+
+.pink-box {
+    width: 220px;
+    height: 300px;
+    background: linear-gradient(135deg, #e77c91, #8d2852);
+    border-radius: 65px 45px 65px 45px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink-box img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #78b5c1;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* White Information Box */
+
+.info {
+    width: 530px;
+    min-height: 260px;
+    background: white;
+    border-radius: 0 90px 90px 0;
+    margin-left: 160px;
+    padding: 45px 30px 35px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.12);
+}
+
+.details h3 {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.details span {
+    font-size: 9px;
+    color: #aaa;
+}
+
+.details p {
+    font-size: 11px;
+    color: #888;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 240px;
+}
+
+/* Social Icons */
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.social a {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #c04470;
+    transform: scale(1.2);
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .main {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .pink-box {
+        position: relative;
+        width: 200px;
+        height: 220px;
+        border-radius: 45px;
+    }
+
+    .info {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -20px;
+        padding: 45px 25px 30px;
+        border-radius: 25px;
+        min-height: 230px;
+    }
+
+    .details h3 {
+        font-size: 11px;
+    }
+
+    .details p {
+        font-size: 10px;
+    }
+}

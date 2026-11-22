@@ -1,0 +1,155 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101416;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+/* Card Design */
+
+.card {
+    width: 220px;
+    background-color: #c5fff7;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+
+/* Middle Card */
+
+.middle {
+    background-color: white;
+    transform: rotate(3deg);
+}
+
+.middle h2 {
+    color: #e6007e;
+}
+
+/* Card Hover */
+
+.card:hover {
+    transform: translateY(-15px) scale(1.04);
+    box-shadow: 0 15px 30px rgba(0, 255, 220, 0.2);
+}
+
+/* Middle Card Hover */
+
+.middle:hover {
+    transform: rotate(0deg) translateY(-15px) scale(1.04);
+}
+
+/* Image */
+
+.img-box {
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+/* Image Hover */
+
+.card:hover img {
+    transform: scale(1.15);
+}
+
+/* Heading */
+
+.card h2 {
+    font-size: 17px;
+    margin: 12px 0;
+    color: #252525;
+}
+
+/* Paragraph */
+
+.card p {
+    font-size: 10px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* Button */
+
+.learn-btn {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+/* Button Hover */
+
+.learn-btn:hover {
+    background-color: #e6007e;
+    transform: scale(1.08);
+}
+
+/* Button Click Active */
+
+.learn-btn.active {
+    background-color: #e6007e;
+    color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .card-container {
+        gap: 30px;
+    }
+
+    .middle {
+        transform: rotate(0deg);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
